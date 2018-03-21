@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<body>
+
+	<div ng-app="myApp" ng-controller="myCtrl">
+	<p>Name: <input ng-model="name"></p>
+	<p>Age: <select ng-model="age">
+		<option value="" selected></option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26</option>
+		<option value="27">27</option>
+		<option value="28">28</option>
+		<option value="29">29</option>
+		<option value="30">30</option>
+		<option value="31">31</option>
+	</select>
+	</p>
+	<p>Birthplace: <input ng-model="birthplace"></p>
+	<p>Resident Country: <input ng-model="country"></p>
+	<p>Gender: 
+		<input ng-model="gender" type="radio" value="man">Male
+		<input ng-model="gender" type="radio" value="woman">Female
+	</p>
+	<p>Describe Yourself: <input ng-model="trait"></p>
+	<fieldset>
+		<legend><h1>Introduction</h1></legend>
+			<h3>My name is {{name}}. I am born in {{birthplace}} and I am now living in {{country}}.</h3>
+			<h3>I am {{age}} years old, and I am {{trait}} {{gender}}.</h3>
+		</fieldset>
+	</div>
+
+	<script src="myApp.js"></script>
+	<script src="myCtrl.js"></script>
+
+	</body>
+</html>
